@@ -7,5 +7,6 @@
 <body>
   <h1>Auto Desployed app</h1>
   <p>Tous ce que vous pushez, sera mis en ligne automatiquement ! enjoi !</p>
+  <?php phpinfo(); ?>
 </body>
 </html>
