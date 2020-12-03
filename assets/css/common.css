@@ -5,14 +5,21 @@
 body{
   background-color: #26262B;
   font-family: sans-serif;
+
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;*/
 }
 section{
   background-color: #2E3136;
   color: white;
   border-radius: 7px;
+
   margin: 1vh 2vw 1vh 2vw;
   min-height: 88vh;
-  width: 95vw;
+  
+  width: 96vw;
 }
 article{
   margin: 1vh 1vw 1vh 1vw;
@@ -52,7 +59,7 @@ footer div a:hover{
   section{
     margin: 0 2vw 0 2vw;
     padding: 0;
-    width: 96vw;
+    width: auto;
   }
   footer{
     display: flex;
@@ -62,9 +69,8 @@ footer div a:hover{
 }
 
 /*
-{ color: #26262B; }
-{ color: #2E3136; }
-{ color: #99A6AD; }
-{ color: #7289DA; }
-{ color: #FFFFFF; }
+Fond :  #0A1F24
+Fond claire : #0B2326
+Bordure :  #D8F0F2
+Bordure claire : #AEC6CA
 */

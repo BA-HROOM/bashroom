@@ -142,7 +142,7 @@ article .linker img{
         height: 20vh;
     }
     article{
-        width: calc(84vw + 4px);
+        /*width: calc(80vw + 4px);*/
         height: calc(66vh + 8px);
     }
     #navShutter{
