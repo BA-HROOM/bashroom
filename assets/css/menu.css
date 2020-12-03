@@ -1,0 +1,98 @@
+/**************************************/
+/*             Main menu              */
+/**************************************/
+#navBar{
+  background-color: #7289DA;
+  height: 5vh;
+}
+#navBar ul{
+  display: flex;
+  justify-content: space-around;
+}
+#navBar ul li{
+  list-style: none;
+  z-index: 666;
+}
+#navBar ul li{
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+}
+#navBar ul li a {
+  width: 10vw;
+}
+#navBar ul li a:hover{
+  background-color: #5F73B8;
+  border-radius: 10px;
+}
+#navBar ul li:nth-child(3) a:hover{
+  border-radius: 0;
+}
+#navBar ul li a{
+  text-decoration: none;
+  display: block;
+  color: #FFFFFF;
+}
+/*=============Deroulant=============*/
+#navBar li ul{
+  display: none;
+  overflow: hidden;
+}
+#navBar li:nth-child(3):hover ul{
+  display: block;
+  background-color: #7289DA;
+  border-radius: 0 0 10px 10px;
+}
+#navBar li ul li:hover{
+  border-radius: 10px;
+}
+
+/*=======================================*/
+/*          Media Querries               */
+/*=======================================*/
+
+@media screen and (max-width:600px){
+  #navBar{
+    position: fixed;
+    background-color: #7289DA;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 5vh;
+    background-position: 1vw 1vh;
+    top: 0;
+    height: 7vh;
+    width: 100vw;
+  }
+  #navBar ul{
+    display: none;
+  }
+  #navBar:hover ul{
+    background-color: #7289DA;
+    /*width: 80vw;*/
+    width: 50vw;/*menu un peut moins large*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #navBar:hover ul li a{
+    border-radius: 10px !important;
+    /*width: 80vw;*/
+    width: 50vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-size: larger;
+  }
+  #navBar:hover ul li ul{
+    display: none;
+  }
+  #navBar ul li:nth-child(3):hover ul li a{
+    height: 5vh;
+    line-height: 5vh;
+    border-radius: 4px;
+  }
+  header~*{/*ici article est utile pour le cv.html*/
+    margin-top: 8vh;
+  }
+}

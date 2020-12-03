@@ -1,0 +1,23 @@
+article p{
+    margin: 1vh 0 1vh 0;
+    text-align: justify;
+}
+section~section{
+    display: flex;
+    justify-content: space-around;    
+}
+section h3{
+    margin-top: 4vh;
+}
+section img{
+    max-width: 95vw;
+    max-height: 100vh;
+    border-radius: 10px 10px 0 0;
+}
+section figcaption{
+    margin: 1vh 1vw 1vh 1vw;
+}
+section figcaption span{
+    float: right;
+    font-size: small;
+}

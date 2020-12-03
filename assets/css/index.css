@@ -1,0 +1,155 @@
+section{
+    display: flex;
+    align-items: center;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    height: calc(64vh + 4px);
+    width: calc(88vw + 8px);
+}
+article div{
+    width: 20vw;
+    height: 30vh;
+    margin: 1vh 1vw 1vh 1vw;
+    border: 0.1px solid #99A6AD;
+}
+
+/*---------------------------------*/
+
+#loger, form p:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form p{
+    margin: 1vh 1vw 2vh 1vw;
+}
+form label{
+    font-size: larger;
+    font-family: monospace;
+}
+form p input{
+    border: 1px solid #99A6AD;
+    background-color: #2E3136;
+    color: #99A6AD;
+}
+form p:nth-child(1) input, p:nth-child(2) input{
+    width: 18vw;
+    height: 4vh;
+}
+form p:not(:nth-child(3)) input:focus{
+    box-shadow: 5px 5px 0 #99A6AD;
+}
+form p:nth-child(3) input{
+    padding: 1vh 1vw 1vh 1vw;
+}
+form p:nth-child(3) input:hover{
+    background-color: #99A6AD;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/*---------------------------------*/
+/*   Volet de navigation           */
+/*---------------------------------*/
+
+#navShutter{
+    background-color: #7289DA;
+    border-radius: 10px;
+    border: 0;
+    margin-left: calc(6vw - 10px);
+    height: 62vh;
+}
+
+#navShutter nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#navShutter nav ul li{
+    list-style: none;
+    text-align: center;
+    width: 20vw;
+    height: 10vh;
+    line-height: 10vh;
+    margin: 1vh 0 1vh 0;
+}
+#navShutter nav ul li:nth-child(4){
+    margin-top: calc(62vh - 44vh);
+}
+#navShutter nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#navShutter nav a:hover{
+    border-radius: 10px;
+    background-color: #5F73B8;
+}
+#navShutter li ul{
+    display: none;
+}
+#navShutter li:nth-child(3):hover ul{
+    display: flex;
+    flex-direction: column; 
+}
+#navShutter li ul li{
+    height: 5vh;
+}
+#navShutter li ul li a{
+    height: 5vh;
+    line-height: 5vh;
+}
+
+/*---------------------------------*/
+/*   les Cases                     */
+/*---------------------------------*/
+
+article .linker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article .linker a{
+    text-decoration: none;
+    border: 1px solid #99A6AD;
+    padding: 1vh 1vw 1vh 1vw;
+}
+article .linker a:hover{
+    background-color: #99A6AD;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+article .linker img{
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+
+/*=======================================*/
+/*          Media Querries               */
+/*=======================================*/
+
+@media screen and (max-width:600px){
+    section{
+        justify-content: center;
+    }
+    article div{
+        width: 40vw;
+        height: 20vh;
+    }
+    article{
+        width: calc(84vw + 4px);
+        height: calc(66vh + 8px);
+    }
+    #navShutter{
+        display: none;
+    }
+
+    form label{
+        font-size: small;
+    }
+}
