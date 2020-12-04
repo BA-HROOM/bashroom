@@ -4,7 +4,6 @@ include("session_manager.php");
 
 /* Try ton connect the session */
 if( isset($_POST['userName']) && isset($_POST['passwd']) && ""!=$_POST['userName'] && ""!=$_POST['passwd'] ){
-    var_dump($_SESSION);
     if(connectSession($_POST['userName'], $_POST['passwd']))
     {
         echo("<script>console.log(\"Is connected\\n\");</script>");
@@ -35,7 +34,28 @@ echo ('
 
 '); 
 }else{
-    echo ('Is connected'); 
+    echo ('
+
+    <div id="loger">
+    <p>Welcome '.getUserName().'</p>
+    <p></p>
+    <!--
+        <form method="POST">
+            <p>
+                <label for="userName">Adresse mail :</label>
+                <input id="userName" name="userName" type="email">
+            </p>
+            <p>
+                <label for="passwd">Password :</label>
+                <input id="passwd" name="passwd" type="password">
+            </p>
+            <p>
+                <input type="submit" value="Login">
+            </p>
+        </form>-->
+    </div>
+    
+    ');
 }
 
 ?>
