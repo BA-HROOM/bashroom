@@ -47,21 +47,7 @@
             <img src="assets/img/orange.ico" alt="Somme fruit !">
           </figure>
         </div>
-        <div id="loger">
-          <form>
-            <p>
-              <label for="userName">Adresse mail :</label>
-              <input id="userName" name="userName" type="email">
-            </p>
-            <p>
-              <label for="passwd">Password :</label>
-              <input id="passwd" name="passwd" type="password">
-            </p>
-            <p>
-              <input type="submit" value="Login">
-            </p>
-          </form>
-        </div>
+        <?php include("assets/pages/login_module.php") ?>
         <div id="navShutter">
           <nav>
             <ul>
