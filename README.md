@@ -1,18 +1,16 @@
-# bashroom
+# BA$HROOM
 
-BA$HROOM auto deployed application ! 
+**BA$HROOM** use an auto deployed web app ! 
+
+## [Dépot du projet](https://github.com/BA-HROOM/bashroom)
+## [Site web du projet](https://bashroom.herokuapp.com/)
 
 ## How to use 
 
-On code sur nos branches en test local, comme à notre habitude, et quand c'est joli et que on veut voir ce que cela donne, merge avec la branche `main` et par une magie mysterieuse, ça s'affiche [a cette adresse](https://bashroom.herokuapp.com/)
+On code sur nos branches en test local, comme à notre habitude, et quand c'est joli et que on veut voir ce que cela donne, merge avec la branche `main` et par une magie mysterieuse, ça s'affiche [à cette adresse](https://bashroom.herokuapp.com/)
 
-## Configuration :
-Pour faire fonctionner l'application localement, pensez à ajouter (créer) le fichier `conf.php` à la racine du dossier `assets/`, ce fichier sera ignoré par le git, on peut donc avoir chaqun sa propre configuration sans proglèmes !
+## Disclaimer
+Faute de temps et d'organisation nous n'avons malheureusement pas pu intégrer le PHP et la base de donnée que vous avons dévelopés. Cependant vous pouvez entrer le `code konami` sur la page d'accueil du site, et observer le résultat.
 
-Le contenu du fichier :
-> Pensez a remplacer `[userName]`, `[password]`, et `[dataBaseName]` par les bonnes valeurs !
-```php
-<?php
-    $pdo = new PDO("mysql:dbname=[dataBaseName];host=localhost",'[userName]','[password]');
-?>
-```
+## Membres
+**Membres de la Team** : Emma GENDRE, Léa JEAN, Hugo LAMOTHE, Emma LEMOS, Adélaïde LOUIS , Nathan MOUSSIRON, Thomas MÜLLER, Jade PESTEL, Priscilla TISSOT, Yohann VERNHES, Alexandre VIEUX.
