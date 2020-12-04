@@ -123,7 +123,7 @@ function glitchText(bodyElement){
     p.style.color = "white";
     p.style.fontSize = "3em";
     p.style.textAlign = "center";
-    p.textContent = "Personne n’a jamais marché sur la Lune\r\n La Terre est plate\r\n Le monde est gouverné par des reptiliens";
+    p.textContent = "|*3250|V|V3 |V’4 _|4|\/|415 |\/|42(|-|3 5(_)2 14 1(_)|V3 -=- 14 73223 357 |*1473 -=- 13 |\/|0|V[)3 357 90(_)\/32|V3 |*42 [)35 23|*71113|V5";
 
     setInterval(function(){
         var shadowChoice = randInt(5);
