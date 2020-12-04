@@ -6,7 +6,7 @@
 
     session_start();
     //include_once("../conf.php");
-    include("assets/conf.php");
+    // include("assets/conf.php");
 
     function isConnected(){
         $isConnected = false;
@@ -60,13 +60,14 @@
         
         $isValide = false;
 
-        $query = $pdo->prepare("SELECT id, nom, email, password FROM utilisateur WHERE email LIKE ? AND mdp LIKE ?");
+        $query = $pdo->prepare("SELECT id, nom, email, mdp FROM utilisateur WHERE email LIKE ? AND mdp LIKE ?");
         $query->execute(array($userEmail, $userPasswd));
         if($row = $query->fetch())
         {
             $_SESSION['user'] = array('connected'=>true, 'userId'=>$row['id'], 'userName'=>$row['nom'], 'userMail'=>$row['email']);
             $isValide = true;
-        }else{
+        }
+        else{
             $_SESSION['user'] = array('connected'=>false, 'userId'=>null, 'userName'=>null, 'userMail'=>null);
         }
         return $isValide;
