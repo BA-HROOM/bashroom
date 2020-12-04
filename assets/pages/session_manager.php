@@ -5,6 +5,8 @@
      */
 
     session_start();
+    //include_once("../conf.php");
+    include("assets/conf.php");
 
     function isConnected(){
         $isConnected = false;
@@ -54,7 +56,8 @@
      */
     function connectSession($userEmail, $userPasswd)
     {
-        include_once("../conf.php");
+        include("assets/conf.php");
+        
         $isValide = false;
 
         $query = $pdo->prepare("SELECT id, nom, email, password FROM utilisateur WHERE email LIKE ? AND mdp LIKE ?");
